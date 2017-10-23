@@ -21,10 +21,25 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+      <ul class="navlogo">
+               <img src="images/yeoman.png" alt="I'm Yeoman">
+             </ul>
+             </div>
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
+
           <div class="navbar-header">
+        
+             <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+             <a class="navbar-brand" href="#/">feBathc4</a>
+             <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+             </ul>
+             </div>
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -33,17 +48,8 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">feBathc4</a>
           </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -52,11 +58,45 @@
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
+
+<div class="footer">
+   <div class="container">
+       <div class="col-md-3">
+         <p>test yoeman</p>
+       </div>
+       <div class="col-md-3">
+           <a href="#">Grunt</a>
+          </ul>         
+       </div>
+       <div class="col-md-3">
+          <a href="#">Bower</a> 
+          </ul>         
+       </div>
+       <div class="col-md-3">
+          <a href="#">Angular</a>
+          </ul>         
+       </div>
+       <div class="clearfix"></div>
+   </div>
+</div>
+
+     <!--  <div class="navbar-footer">
+        
+             <div class="default navbar-default" id="js-navbar-default">
+             <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+             </ul>
+             </div>
+        </div> -->
+
+     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-heart"></span> footer goes here</p>
       </div>
-    </div>
+    </div>   
+   
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -87,6 +127,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/artikel.js"></script>
         <!-- endbuild -->
 </body>
 </html>

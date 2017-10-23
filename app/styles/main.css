@@ -22,6 +22,11 @@ body {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
+
+ .navlogo {
+    text-align: center;
+  }
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -53,16 +58,26 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 10px 0;
 }
 .marketing p + h4 {
   margin-top: 28px;
+}
+.marketing li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.marketing h5{
+  font-style: italic;
+  color:grey;
+  text-align: right;
+  border-bottom: 1px solid lightgrey;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 100%;
   }
 
   /* Remove the padding we set earlier */
@@ -80,4 +95,19 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+/* URL lists */
+.list a{
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.list li{
+ border-bottom: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+ 
 }

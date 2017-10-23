@@ -24,6 +24,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/artikel', {
+        templateUrl: 'views/testhomepage.html',
+        controller: 'ArtikelCtrl',
+        controllerAs: 'artikel'
+      })
       .otherwise({
         redirectTo: '/'
       });
