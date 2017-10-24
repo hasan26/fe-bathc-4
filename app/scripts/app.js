@@ -24,6 +24,16 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/route', {
+        templateUrl: 'views/myroute.html',
+        controller: 'MyrouteCtrl',
+        controllerAs: 'myRoute'
+      })
+      .when('/my/route', {
+        templateUrl: 'views/myroute.html',
+        controller: 'MyrouteCtrl',
+        controllerAs: 'myRoute'
+      })
       .otherwise({
         redirectTo: '/'
       });

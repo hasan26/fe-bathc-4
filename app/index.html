@@ -21,7 +21,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <hr width="60%">
+    <div class="header text-center">
+        <h1><b>GODESIGN</b></h1>
+    <br>
+
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -33,15 +37,16 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">feBathc4</a>
+            <!--<a class="navbar-brand" href="#/">feBathc4</a>-->
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
+              <li class="active"><a ng-href="/#!/my/route">HomeLayout</a></li>
+              <li ><a href="#/">Home</a></li>
               <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="/#/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -54,7 +59,22 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <div class="col-sm-2">
+          <p align ="left"><b>Top of page</b></p>
+        </div>
+        <div class="col-sm-2">
+          <p><b>Good books</b></p>
+        </div>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-2">
+      </div>
+    <div class="col-sm-2">
+      <p><b>Mailing list</b></p>
+    </div>
+    <div class="col-sm-2">
+      <p><b>Facebook</b></p>
+    </div>
       </div>
     </div>
 
@@ -87,6 +107,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/myroute.js"></script>
         <!-- endbuild -->
 </body>
 </html>
