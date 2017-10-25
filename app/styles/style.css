@@ -73,15 +73,18 @@ h5 a:hover{
 .garis-bawah{
   color: rgb(198, 198, 198);
   margin-left: 10px;
-  border-style: solid;
-  border-left: 0.5px;
-  border-right: 0.5px;
-  border-top: 0.5px;
-  border-color: rgb(198, 198, 198);
+  border-bottom: 0.5px solid rgb(198, 198, 198);
 }
 .gambar{
   margin-left: 10px;
   margin-bottom: 10px;
   width: 90%;
   height: 100px;
+}
+
+.image-artikel{
+  margin: 20px 20px 10px 20px;
+  width: 300px;
+  height: 200px;
+  float: left;
 }

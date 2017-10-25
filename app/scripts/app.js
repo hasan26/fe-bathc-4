@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/namaRoute', {
+        templateUrl: 'views/namaroute.html',
+        controller: 'NamarouteCtrl',
+        controllerAs: 'namaRoute'
+      })
       .otherwise({
         redirectTo: '/'
       });
