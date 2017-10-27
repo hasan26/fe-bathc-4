@@ -25,7 +25,7 @@ angular
         controllerAs: 'main'
       })
       .when('/artikel', {
-        templateUrl: 'views/testhomepage.html',
+        templateUrl: 'views/artikel.html',
         controller: 'ArtikelCtrl',
         controllerAs: 'artikel'
       })

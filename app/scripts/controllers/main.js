@@ -8,10 +8,20 @@
  * Controller of the feBathc4App
  */
 angular.module('feBathc4App')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+
+  .controller('MainCtrl', function ($scope, $http) {
+   console.log('bebas');
+
+  	$http.get('http://budi-daya-jamur-admin.herokuapp.com/api/home').then(success, error);
+
+  	function success(response){
+  		$scope.data = response.data;
+  	}
+
+  	function error(){
+  		console.log('error')
+  	}
+
+});
+
+  

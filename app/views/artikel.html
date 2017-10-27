@@ -1,1 +1,10 @@
-<p>This is the artikel view.</p>
+
+<form action="">
+  Input:<br>
+  <input type="text" name="input" value="Sample" ng-model="textSample">
+  <br>
+  <br><br>
+  <input type="submit" ng-click="getData()" value="Submit">
+</form> 
+
+<p ng-repeat="data in records">{{data.title}} </p>
