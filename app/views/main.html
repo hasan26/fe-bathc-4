@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div ng-repeat="data in budidaya">
+      <div class="garis">{{data.updated_at }}</div>
+      <img src="{{data.image}}" alt="{{data.title}}" class="image-artikel">
+      <h3>{{ data.title }}</h3>
+      <p class="article">{{ data.text }}</p>
+      <h5><a href="/#">READ MORE</a></h5>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <h5 class="judul-berita">Most Recent</h5>
+    <div ng-repeat="most in budidaya">
+      <div class="garis-bawah">
+        <h6>{{ most.category.title}}</h6></div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <h5 class="judul-berita">From the book store</h5>
+    <div ng-repeat="images in budidaya">
+      <div><img src="{{images.image}}" alt="{{images.title}}" class="gambar"></div>
+    </div>
+
+  </div>
+
+</div>
