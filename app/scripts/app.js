@@ -15,8 +15,28 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.router'
   ])
+  .config(function ($stateProvider, $urlRouterProvider)
+  {
+    $urlRouterProvider.otherwise('/home');
+
+    $stateProvider
+
+        // HOME STATES AND NESTED VIEWS ========================================
+        .state('home', {
+            url: '/home',
+            templateUrl: 'views/main.html',
+            controller: 'MyrouteCtrl'
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: 'views/myroute.html'
+        });
+
+  })
+  /*
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -34,7 +54,13 @@ angular
         controller: 'MyrouteCtrl',
         controllerAs: 'myRoute'
       })
+      .when('/latihanRoute', {
+        templateUrl: 'views/lathanroute.html',
+        controller: 'LathanrouteCtrl',
+        controllerAs: 'lathanRoute'
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
+*/
