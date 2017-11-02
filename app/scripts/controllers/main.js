@@ -8,7 +8,7 @@
  * Controller of the feBathc4App
  */
 angular.module('feBathc4App')
-  .controller('MainCtrl', function($scope, $http)
+  .controller('MainCtrl', function($scope, $http, $state)
 
     // {
     //   var succesCallBack = function(response) {
@@ -40,5 +40,9 @@ angular.module('feBathc4App')
         'AngularJS',
         'Karma'
       ];
+
+      $scope.clickButton = function(){
+        $state.go('landing.home');
+      };
 
     });

@@ -19,16 +19,17 @@ angular
     'ui.router'
   ])
   .config(function ($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/landing/home');
     $urlRouterProvider.when('/landing', '/landing/home');
-    $urlRouterProvider.when('/', '/login');
+    $urlRouterProvider.when('/', '/landing/home');
 
     $stateProvider
-      .state('main', {
-        url: '/',
+      .state('dashboard', {
+        url: '/dashboard',
         views: {
           'level0': {
-            templateUrl: 'views/blank0.html'
+            templateUrl: 'views/dashboard.html',
+            controller: 'MainCtrl'
           }
         }
       })
