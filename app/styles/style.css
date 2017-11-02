@@ -1,0 +1,91 @@
+.line{
+  width: 100%;
+  height: 10px;
+  background-color: black;
+
+}
+.atas{
+  margin-top: 10px;
+  height: 2px;
+}
+.bawah{
+  height: 2px;
+}
+.hurufBesar{
+  margin: 20px 0 20px 0;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.nav-hover:hover{
+  background-color: #eee;
+  color: rgb(255, 255, 255);
+}
+.garis {
+ overflow: hidden;
+ text-align: right;
+ color: #989898;
+}
+.garis:before{
+ background-color: #989898;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 80%;
+}
+.garis:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h3{
+  font-weight: bold;
+  margin-left: 10px;
+}
+.article{
+  margin-top: -20px;
+  margin-left:  10px;
+  text-align: justify;
+}
+h5{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+h5 a{
+  background-color: grey;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+h5 a:hover{
+  background-color: brown;
+  text-decoration: none;
+  color: white;
+}
+.judul-berita{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.garis-bawah{
+  color: rgb(198, 198, 198);
+  margin-left: 10px;
+  border-bottom: 0.5px solid rgb(198, 198, 198);
+}
+.gambar{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 100px;
+}
+
+.image-artikel{
+  margin: 20px 20px 10px 20px;
+  width: 300px;
+  height: 200px;
+  float: left;
+}

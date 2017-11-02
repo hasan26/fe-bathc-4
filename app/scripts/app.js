@@ -18,22 +18,73 @@ angular
     'ngTouch',
     'ui.router'
   ])
-  .config(function ($stateProvider, $urlRouterProvider)
-  {
-    $urlRouterProvider.otherwise('/home');
+  .config(function ($stateProvider, $urlRouterProvider){
+    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.when('/landing', '/landing/home');
+    $urlRouterProvider.when('/', '/login');
 
     $stateProvider
-
-        // HOME STATES AND NESTED VIEWS ========================================
-        .state('home', {
-            url: '/home',
+      .state('main', {
+        url: '/',
+        views: {
+          'level0': {
+            templateUrl: 'views/blank0.html'
+          }
+        }
+      })
+      .state('login', {
+        url: '/login',
+        views: {
+          'level0': {
+            templateUrl: 'views/login.html'
+          }
+        }
+      })
+      .state('dashboard', {
+        url: '/dashboard',
+        views: {
+          'level0': {
+            templateUrl: 'views/dashboard.html'
+          }
+        }
+      })
+      .state('landing', {
+        abstract : true,
+        url: '/landing',
+        views: {
+          'level0': {
+            templateUrl: 'views/landing.html'
+          }
+        }
+      }).state('landing.home', {
+        url: '/home',
+        views: {
+          'level1': {
             templateUrl: 'views/main.html',
-            controller: 'MyrouteCtrl'
-        })
-        .state('about', {
-            url: '/about',
-            templateUrl: 'views/myroute.html'
-        });
+            controller: 'MainCtrl'
+          }
+        }
+      })
+      .state('landing.about', {
+        url: '/about',
+        views: {
+          'level1': {
+            templateUrl: 'views/about.html',
+            controller: 'MainCtrl'
+          }
+        }
+      })
+      // .state('home', {
+      //   url: '/home',
+      //   templateUrl: 'views/main.html',
+      //   controller: 'MainCtrl'
+      // })
+      // .state('about', {
+      //   url: '/about',
+      //   templateUrl: 'views/about.html',
+      //   controller: 'AboutCtrl'
+      // })
+    ;
 
   })
   /*
