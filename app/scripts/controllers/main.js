@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the feBathc4App
  */
-angular.module('feBathc4App')
+myApp
   .controller('MainCtrl', function($scope, $http, $state)
 
     // {

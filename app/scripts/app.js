@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var myApp = angular
   .module('feBathc4App', [
     'ngAnimate',
     'ngCookies',
@@ -64,6 +64,15 @@ angular
           'level1': {
             templateUrl: 'views/about.html',
             controller: 'MainCtrl'
+          }
+        }
+      })
+      .state('landing.addArticle', {
+        url: '/add/article',
+        views: {
+          'level1': {
+            templateUrl: 'views/addArticle.html',
+            controller: 'ArticleCtrl'
           }
         }
       })
