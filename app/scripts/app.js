@@ -21,7 +21,7 @@ angular
   .config(function ($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
     $urlRouterProvider.when('/landing', '/landing/home');
-    $urlRouterProvider.when('/', '/login');
+    $urlRouterProvider.when('/', '/landing');
 
     $stateProvider
       .state('main', {
